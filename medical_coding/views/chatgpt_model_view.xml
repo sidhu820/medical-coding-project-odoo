@@ -1,0 +1,53 @@
+<odoo>
+
+<!--        <record id="action_data" model="ir.actions.act_window">-->
+<!--        <field name="name">Chatgpt Chatbot</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="res_model">chatgpt.model</field>-->
+<!--    </record>-->
+<!--    -->
+    <record id="action_chatgpt_wizard" model="ir.actions.act_window">
+    <field name="name">ChatGPT Wizard</field>
+    <field name="res_model">chatgpt.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="medical_coding.chatgpt_wizard_view_form"/>
+    <field name="target">new</field>
+</record>
+
+      <record id="view_chatgpt_tree" model="ir.ui.view">
+        <field name="name">chatgpt.tree</field>
+        <field name="model">chatgpt.model</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="medical_code"/>
+                <field name="code_desc"/>
+
+            </tree>
+        </field>
+    </record>
+
+
+<!--    <record id="chatgpt_model_form" model="ir.ui.view">-->
+<!--        <field name="name">chatgpt_model_form</field>-->
+<!--        <field name="model">chatgpt.model</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--&lt;!&ndash;                <data>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <group>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="name"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        &lt;!&ndash; Add other fields as needed &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    </group>&ndash;&gt;-->
+<!--                    &lt;!&ndash; Add a button to open the wizard &ndash;&gt;-->
+<!--                    <header>-->
+<!--                        <button string="Medical Chatbot" type="object" class="oe_highlight" name="open_wizard"/>-->
+<!--                    </header>-->
+<!--&lt;!&ndash;                </data>&ndash;&gt;-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+
+
+
+</odoo>

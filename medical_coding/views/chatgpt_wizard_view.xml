@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record id="chatgpt_wizard_view_form" model="ir.ui.view">
+            <field name="name">chatgpt_wizard_view_form</field>
+            <field name="model">chatgpt.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name" placeholder=""/>
+                        <field name="output" readonly="1"/>
+                    </group>
+                    <footer>
+                        <button string="Send" type="object" class="oe_highlight" name="perform_action"/>
+                        <button string="Clear" type="object" class="oe_link" name="clear_fields"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

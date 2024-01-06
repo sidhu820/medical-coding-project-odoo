@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!--    <menuitem id="menu_chatgpt_root"-->
+    <!--              name="ChatBot"-->
+    <!--              action="action_data"-->
+    <!--              sequence="10"/>-->
+
+
+    <menuitem id="menu_chatgpt_wizard"
+              name="Medical Chatbot"
+              action="action_chatgpt_wizard"
+              sequence="10"/>
+</odoo>
