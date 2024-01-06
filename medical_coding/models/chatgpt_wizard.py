@@ -50,7 +50,7 @@ class ChatgptWizard(models.TransientModel):
         def medchat(msg):
             import openai
 
-            openai.api_key = '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'
+            openai.api_key = ''
             messages = [
                 {"role": "system", "content": "You are a kind helpful assistant for madical coding."},
             ]
